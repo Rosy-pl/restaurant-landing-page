@@ -137,7 +137,7 @@ nav a:hover {
   transition: 0.4s;
 }
 
-/* Efeito premium ao passar o mouse */
+/* Efeito ao passar o mouse */
 .hero-imagem img:hover {
   transform: scale(1.03);
 }
