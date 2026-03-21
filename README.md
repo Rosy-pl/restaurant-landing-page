@@ -54,5 +54,5 @@ Neste projeto, pratiquei:
 
 ## 📞 Contato
 
-- LinkedIn: [https://www.linkedin.com/in/rosalia-pav%C3%B3n-l%C3%B3pez]
+- LinkedIn: [https://www.linkedin.com/in/rosalia-pav%C3%B3n-l%C3%B3pez-331885230/]
 - GitHub: [SEU GITHUB AQUI]
