@@ -6,16 +6,9 @@ Landing page responsiva de restaurante desenvolvida com HTML, CSS e JavaScript, 
 
 ## 🚀 Demonstração
 
-🔗 Acesse o projeto: [Clique aqui](https://rosy-pl.github.io/restaurant-landing-page/)
+🔗 Acesse o projeto:(https://rosy-pl.github.io/restaurant-landing-page/)
 
 ---
-
-## 🖼️ Preview
-
-![Preview do projeto](LINK-DA-IMAGEM)
-
----
-
 ## 🛠️ Tecnologias utilizadas
 
 - HTML5
