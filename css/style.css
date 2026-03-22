@@ -19,6 +19,8 @@ header {
   padding: 20px 50px;
   background-color: #FCF9F2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 /* Logo do header */
@@ -27,9 +29,7 @@ header img {
   max-width: 300px;
 }
 
-
-
-/* Botão do header */
+/* Botões normais do header */
 header button {
   padding: 10px 20px;
   border: none;
@@ -45,7 +45,18 @@ header button:hover {
   background-color: #a30000;
 }
 
+header.active {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* ===== MENU ===== */
+#nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -58,29 +69,27 @@ nav a {
   font-weight: 500;
 }
 
-#nav-menu {
-  display: none;
-}
-
-#nav-menu.active {
-  display: flex;
-}
-
 /* Hover dos links do menu */
 nav a:hover {
   color: #8B0000;
 }
 
+/* ===== BOTÃO HAMBÚRGUER ===== */
 #menuHamburguer {
-  display: none; /* desktop */
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
   width: 40px;
   height: 40px;
+  padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+#menuHamburguer:hover {
+  background: transparent;
 }
 
 #menuHamburguer span {
@@ -90,6 +99,7 @@ nav a:hover {
   background-color: black;
   border-radius: 2px;
 }
+
 /* ===== HERO ===== */
 .hero {
   display: flex;
@@ -393,9 +403,7 @@ footer p {
 /* =========================
    RESPONSIVIDADE
 ========================= */
-
 @media (max-width: 768px) {
-
   header {
     flex-direction: column;
     gap: 20px;
@@ -407,20 +415,31 @@ footer p {
     display: flex;
   }
 
-  /* menu escondido no celular */
+  /* menu mobile animado */
   #nav-menu {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    background: #FCF9F2;
+    padding: 20px 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 
-  /* quando clicar no botão */
   #nav-menu.active {
-    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  /* se teu menu for nav ul */
   nav ul {
     flex-direction: column;
     align-items: center;
