@@ -27,6 +27,8 @@ header img {
   max-width: 300px;
 }
 
+
+
 /* Botão do header */
 header button {
   padding: 10px 20px;
@@ -56,9 +58,33 @@ nav a {
   font-weight: 500;
 }
 
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.active {
+  display: flex;
+}
+
 /* Hover dos links do menu */
 nav a:hover {
   color: #8B0000;
+}
+
+#menuHamburguer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: #C8A96A;
+  cursor: pointer;
+}
+
+#menuHamburguer span{
+    width: 25px;
+  height: 3px;
+  background-color: black;
+  display: block;
 }
 
 /* ===== HERO ===== */
