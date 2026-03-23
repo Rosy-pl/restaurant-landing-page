@@ -150,12 +150,18 @@ nav a:hover {
 }
 
 /* Botão "Falar no WhatsApp" */
-.hero-texto a[href*="wa.me"] {
+#whatsApp {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #8B0000;
   color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.hero-texto a[href*="wa.me"]:hover {
+#whatsApp:hover {
   background-color: #a30000;
   transform: translateY(-2px);
 }

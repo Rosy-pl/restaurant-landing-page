@@ -55,3 +55,53 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+
+//BOTÃO FALAR NO WHATSAPP
+
+    //numero de whatsapp com 55 + DD
+
+    const numero= "5581992133306";
+
+const whatsapp=document.getElementById("whatsApp");
+
+
+
+whatsapp.addEventListener("click" , function(){
+
+
+
+    //a mensagem que vai aparecer ao clicar no botao
+
+    const mensagem="Olá, gostaria de falar com o restaurante!";
+
+    //formata a mensagem
+
+    const mensagemFormatada= encodeURIComponent(mensagem);
+
+    //criar link do whatsapp
+    const link= `http://wa.me/${numero}?text=${mensagemFormatada}`;
+
+    //abre whatsapp em outra aba
+     
+    window.open(link,"_blank");
+
+
+
+});
+
+//botao reserva
+
+const reserva=document.getElementById("reserva");
+
+reserva.addEventListener("click", function(){
+   
+    const mensagem="Ola gostaria de fazer uma reserva";
+
+    const mensagemFormatada= encodeURIComponent(mensagem);
+
+    const link=`http://wa.me/${numero}?text=${mensagemFormatada}`;
+
+    window.open(link,"_blank");
+
+});
